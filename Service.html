@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Webo Republics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+    header {
+      background: #111;
+      padding: 20px 40px;
+      text-align: center;
+      border-bottom: 2px solid #0ff;
+    }
+    header h1 {
+      color: #0ff;
+      font-size: 2.5rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+    .service-card {
+      background: #1a1a1a;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,255,255,0.1);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .service-content {
+      padding: 20px;
+    }
+    .service-content h2 {
+      color: #0ff;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .service-content p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .contact {
+      background: #111;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .contact h2 {
+      color: #0ff;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background: #222;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      padding: 12px 25px;
+      background: #0ff;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background: #00cccc;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+    <p>Building Your Vision, Coding Your Future</p>
+  </header>
+
+  <section class="services">
+    <!-- Service Cards (same as before) -->
+    <div class="service-card">
+      <img src="https://source.unsplash.com/800x600/?webdesign" alt="Web Design">
+      <div class="service-content">
+        <h2>Responsive Web Design</h2>
+        <p>Custom designs that look amazing on all devices. We combine beauty with usability to leave lasting impressions.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="https://source.unsplash.com/800x600/?coding,development" alt="Web Development">
+      <div class="service-content">
+        <h2>Web Development</h2>
+        <p>Robust, scalable websites built with the latest technologies. From HTML to advanced JavaScript frameworks.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="https://source.unsplash.com/800x600/?ecommerce" alt="eCommerce Solutions">
+      <div class="service-content">
+        <h2>eCommerce Solutions</h2>
+        <p>Sell online with confidence. We build secure, modern, and feature-rich eCommerce platforms tailored to your brand.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="https://source.unsplash.com/800x600/?seo" alt="SEO">
+      <div class="service-content">
+        <h2>SEO & Optimization</h2>
+        <p>Rank higher on search engines and improve site speed with our expert SEO and performance optimization services.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="https://source.unsplash.com/800x600/?support,team" alt="Support">
+      <div class="service-content">
+        <h2>Ongoing Support</h2>
+        <p>24/7 support and maintenance to keep your website running smoothly and securely with zero downtime.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <section class="contact" style="background:#0d0d0d;">
+  <h2>Order Now</h2>
+  <form class="contact-form" action="https://formspree.io/f/xrbkrpoo" method="POST" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="service" placeholder="Service Required (e.g., Web Design)" required />
+    <textarea name="details" rows="5" placeholder="Project Details / Requirements" required></textarea>
+    You can also upload pictures (Optional)
+    <!-- File Upload -->
+    <input type="file" name="attachment" accept="image/*,.pdf,.doc,.docx" Optional style="background:#1c1c1c; padding: 12px; border-radius: 8px; color: #0ff;" />
+
+    <button type="submit">Place Order</button>
+  </form>
+</section>
+
+  
+  </section>
+
+  <footer>
+    &copy; 2025 Webo Republics. All Rights Reserved.
+  </footer>
+</body>
+</html>

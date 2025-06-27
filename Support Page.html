@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support - Webo Republic</title>
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: #0c0c0c;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .container {
+      background: #1a1a1a;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+      width: 100%;
+      max-width: 500px;
+      animation: fadeIn 1.5s ease-in;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00e5ff;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      background: #2a2a2a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+    input:focus, textarea:focus {
+      box-shadow: 0 0 5px #00e5ff;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(to right, #00e5ff, #00bfff);
+      border: none;
+      border-radius: 10px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: linear-gradient(to right, #00ffff, #00bfff);
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+   <!-- modify this form HTML and place wherever you want your form -->
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/mvgrwywo"
+  method="POST"
+><label>
+    Your name
+    <input type="Name" name="Name">
+</label>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your issue:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+
+  </div>
+</body>
+</html>
